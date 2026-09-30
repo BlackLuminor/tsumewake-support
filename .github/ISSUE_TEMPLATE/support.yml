@@ -1,0 +1,25 @@
+name: サポート問い合わせ
+description: 不具合、使い方、ご意見をお送りください
+title: "[サポート] "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: "この投稿は公開されます。氏名、住所、Apple Account情報などの個人情報は書かないでください。"
+  - type: textarea
+    id: inquiry
+    attributes:
+      label: 内容
+      description: 困っていること、またはご意見を教えてください。
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: アプリのバージョン
+      placeholder: "例：1.0"
+  - type: input
+    id: device
+    attributes:
+      label: iPhoneの機種とiOSのバージョン
+      placeholder: "例：iPhone 17 / iOS 26"
